@@ -355,29 +355,61 @@ jQuery(window).on('resize', function(){
 /**************************************************/
 //Header sticky
 /**************************************************/
+if(jQuery("header.zta-above-stick-hdr").length!=''||jQuery("header.zta-main-stick-hdr").length!=''||jQuery("header.zta-bottom-stick-hdr").length!=''){
 if(jQuery("#header-scroll-down-hide").val()=='on'){
   var position = jQuery(window).scrollTop(); 
   var $headerBar = jQuery('header').height();
+  var $mainheader = jQuery('header.zta-main-stick-hdr .main-header').height(); 
+ var $topheader = jQuery('header.zta-main-stick-hdr .top-header').height(); 
+ var $bottomheader = jQuery('header.zta-main-stick-hdr .bottom-header').height();
+ $tl$headerBar = $mainheader + $topheader +$bottomheader;
 // should start at 0
 jQuery(window).scroll(function() {
     var scroll = jQuery(window).scrollTop();
     if(scroll > position || scroll < $headerBar) {
     jQuery("header.zta-above-stick-hdr,header.zta-main-stick-hdr,header.zta-bottom-stick-hdr").removeClass("shrink");
+    jQuery('#content,.elementor').css('margin-top',0+'px');
     }else{
     jQuery("header.zta-above-stick-hdr,header.zta-main-stick-hdr,header.zta-bottom-stick-hdr").addClass("shrink");
+    if(jQuery('header.zta-transparent-header').length!=''){
+          jQuery('#content,.elementor').css('margin-top',0+'px');
+       }else{
+         if(jQuery('body.elementor-page').length!=''){
+                       jQuery('.elementor').css('margin-top',$tl$headerBar+'px');
+              }else{
+                      jQuery('#content').css('margin-top',$tl$headerBar+'px');
+              }
+         
+       }
     }
     position = scroll;
 });
 }else{
 jQuery(document).on("scroll", function(){
 var $headerBar = jQuery('header').height();
+var $mainheader = jQuery('header.zta-main-stick-hdr .main-header').height(); 
+var $topheader = jQuery('header.zta-main-stick-hdr .top-header').height(); 
+var $bottomheader = jQuery('header.zta-main-stick-hdr .bottom-header').height(); 
+$tl$headerBar = $mainheader + $topheader +$bottomheader;
 var $totalheaderBar = $headerBar + 20;
   if(jQuery(document).scrollTop() > $totalheaderBar){
       jQuery("header.zta-above-stick-hdr,header.zta-main-stick-hdr,header.zta-bottom-stick-hdr").addClass("shrink");
+        if(jQuery('header.zta-transparent-header').length!=''){
+          jQuery('#content,.elementor').css('margin-top',0+'px');
+       }else{
+         if(jQuery('body.elementor-page').length!=''){
+                       jQuery('.elementor').css('margin-top',$tl$headerBar +'px');
+              }else{
+                      jQuery('#content').css('margin-top',$tl$headerBar +'px');
+              }
+       }
     }else{
       jQuery("header.zta-above-stick-hdr,header.zta-main-stick-hdr,header.zta-bottom-stick-hdr").removeClass("shrink");
+      jQuery('#content,.elementor').css('margin-top',0+'px');
+
   } 
 });
+}
 }
 // wp nav menu widget last item
 jQuery(document).ready(function(){

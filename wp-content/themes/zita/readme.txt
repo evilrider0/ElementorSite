@@ -2,15 +2,15 @@
 Contributors: wpzita
 Tags: two-columns, right-sidebar, custom-menu, custom-background, editor-style, translation-ready, full-width-template, flexible-header, sticky-post, theme-options, one-column, e-commerce, blog, photography, threaded-comments, custom-colors
 Requires at least: 4.5
-Tested up to: 5.3
-Stable tag: 1.3.4
+Tested up to: 5.4
+Stable tag: 1.3.7
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Zita theme is Easy to use, Fully Customizable, it has unique option which helps to create great website.
 
 == Description ==
-Zita is super fast and highly customizable theme. Suitable to creating any type of website such a corporate, store, agency, blog, portfolio, restaurant, wedding, construction, hospital, school, interior, car workshop, life coach, wine shop, barber shop, furniture shop, yoga, resume, charity, digital marketing  etc. Zita include 8 unique header layout and 8 footer widget layout which make it extremely powerful. Zita works with any of your favorite page builder like Elementor, Visual Composer, Beaver Builder, SiteOrigin, Divi, Brizy etc. Some more amazing feature as #Woocommerce ready #RTL Ready #Full Responsive #Edit settings in tablet & mobile #Top header #Bottom header #Top footer #Bottom Footer #Transparent Header. Looking for perfect base theme? Looking for perfect multipurpose theme? Look no further! just check Zita demos:https://wpzita.com/. Zita is built with best SEO practice and best friend of Woocommerce and Elementor.
+Zita is super fast and highly customizable theme. Suitable to creating any type of website such a corporate, store, agency, blog, portfolio, restaurant, wedding, construction, hospital, school, interior, car workshop, life coach, wine shop, barber shop, furniture shop, yoga, resume, charity, digital marketing  etc. Zita include 8 unique header layout and 8 footer widget layout which make it extremely powerful. Zita works with any of your favourite page builder like Elementor, Visual Composer, Beaver Builder, SiteOrigin, Divi, Brizy etc. Some more amazing feature as Woocommerce ready, RTL Ready, Full Responsive, Edit settings in tablet & mobile, Top header, Bottom header, Top footer, Bottom Footer, Transparent Header. Looking for perfect base theme? Looking for perfect multipurpose theme? Look no further! just check Zita demos:https://wpzita.com/. Zita is built with best SEO practice and best friend of Woocommerce and Elementor.
 
 For more information about Zita please go to : https://wpzita.com
 
@@ -78,6 +78,19 @@ Yes our theme supports builder
 Yes, this theme is tested with latest version of WordPress, you can use it for your site.
 
 == Changelog ==
+= 1.3.8 =
+* Header bottom spacing issue fixed.
+* WP 5.4 compatibility checked.
+
+= 1.3.7 =
+* Header issue fixed.
+
+= 1.3.6 =
+* sticky header jerk issue fixed.
+
+= 1.3.5 =
+* iframe height issue fixed.
+
 = 1.3.4 =
 * Social icon style issue fixed.
 * Sanitize issue fixed.
@@ -202,70 +215,5 @@ Initial release
 
 == Upgrade Notice ==
 
-= 1.3.3 =
-* "style.css" file updated.
-
-= 1.3.2 =
-* "admin-function.php" file updated.
-* "header-function.php" file updated.
-
-= 1.2.8 =
-* "pagination.php" file updated.
-* "infinite-scroll.php" file updated.
-
-= 1.2.7 =
-* "blog-function.php" file updated.
-* "sidebar-function.php" file updated.
-
-= 1.2.6 =
-* "pagination.php" file updated.
-
-= 1.2.4 =
-* "sidebar-function.php" file updated.
-
-= 1.2.3 =
-* "style.css" & "sidebar-function.php" file updated.
-
-= 1.2.2 =
-* "style.css" file updated.
-
-= 1.2.0 =
-* "style.css & Header.php" file updated.
-
-= 1.1.2 =
-* "style.css" file updated.
-
-= 1.1.1 =
-* "404.php" file updated.
-
-= 1.1.0 =
-* "custom-style.php" file updated.
-
-= 1.0.9 =
-* "class-zita-font-selector.php" file updated.
-
-= 1.0.8 =
-* "search.php" file updated.
-* "searhform.php" file updated.
-* "class-zita-font-selector.php" file updated.
-* "pagination.php" file updated.
-
-= 1.0.7 =
-* "class-zita-admin-settings.php" file updated.
-
-= 1.0.6 =
-* "blog-function.php" file updated.
-
-= 1.0.5 =
-* "class-zita-admin-settings.php" file is updated.
-
-= 1.0.4 =
-* "header.php" file is updated.
-* "header-function.php" file is updated.
-* "style.css" file is updated.
-
-= 1.0.3 =
-* "style.css" file is updated.
-
-= 1.0.2 =
-* "readme.txt" file is updated as per new rules of WordPress.
+= 1.3.5 =
+* iframe height issue fixed.
